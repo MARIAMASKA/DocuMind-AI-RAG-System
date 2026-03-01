@@ -1,0 +1,7 @@
+.env
+check_model.py
+__pycache__/
+venv/
+uploads/
+chroma_db/
+*.pyc
