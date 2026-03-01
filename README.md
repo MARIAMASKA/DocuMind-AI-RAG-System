@@ -21,12 +21,10 @@
 ## 📽️ Demo
 
 <p align="center">
-  <img src="assets/demo.gif" width="800" alt="DocuMind AI Demo"/>
-</p>
-
-<p align="center">
   <em>Upload → Semantic Indexing → AI Summary → MCQ Generation → Context-Aware Chat</em>
 </p>
+
+> 🎬 Demo GIF coming soon!
 
 ---
 
@@ -116,15 +114,15 @@ DocuMind-AI-RAG-System/
 ├── app.py                  # Main Flask application & RAG pipeline
 ├── templates/
 │   └── index.html          # Frontend UI
-├── chroma_db/              # Persistent vector store (auto-generated)
-├── uploads/                # Temporary document storage (auto-generated)
-├── assets/
-│   └── demo.gif            # Demo preview
-├── requirements.txt        # Python dependencies
+├── chroma_db/              # Persistent vector store (auto-generated on first run)
+├── uploads/                # Temporary document storage (auto-generated on first run)
+├── .vscode/                # VS Code workspace settings
 ├── .env                    # API keys (not committed)
 ├── .gitignore
 └── README.md
 ```
+
+> 📝 `requirements.txt` is not yet included — see the [Installation](#️-installation--setup) section for manual dependency setup.
 
 ---
 
@@ -152,8 +150,10 @@ source venv/bin/activate
 ### 3. Install dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install flask google-generativeai sentence-transformers chromadb langchain pdfplumber python-docx python-dotenv
 ```
+
+> 💡 You can also generate a `requirements.txt` by running `pip freeze > requirements.txt` after installing.
 
 ### 4. Configure environment variables
 
@@ -215,15 +215,17 @@ DocuMind AI uses a multi-layered approach to ensure reliable, grounded responses
 
 ---
 
+---
+
 ## 👩‍💻 Author
 
 <div align="center">
 
-**Maria Gamal**  
-*AI Engineer · NLP Specialist*
+### Maria Gamal  
+AI Engineer · NLP & Computer Vision Specialist  
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mariam_Askar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mariamaskar2/)
+[![GitHub](https://img.shields.io/badge/GitHub-MARIAMASKA-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MARIAMASKA)
 
 </div>
 
@@ -231,6 +233,8 @@ DocuMind AI uses a multi-layered approach to ensure reliable, grounded responses
 
 <div align="center">
 
-*If you found this project helpful, consider giving it a ⭐*
+🚀 Building intelligent systems that combine retrieval, reasoning, and real-world engineering.
+
+⭐ If you found this project interesting, consider giving it a star.
 
 </div>
